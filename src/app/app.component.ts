@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "events-app",
+  template: `
+    <nav-app></nav-app>
+    <router-outlet></router-outlet>
+  `
 })
-export class AppComponent {
-  title = 'ng-fundamentals';
+export class EventsAppComponent {
+  title = "ng-fundamentals";
 }
